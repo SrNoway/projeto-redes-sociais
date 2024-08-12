@@ -5,6 +5,11 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+
+}
 
 html, body {
     height: 100vh;
@@ -22,14 +27,14 @@ main {
     height: 100vh;
     
 }
-section#telefone {
+section#notebook {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     height: 853px;
-    width: 1280px;
+    width: 1300px;
     
     background: url(../imagens/notebook.png) no-repeat;
 }
@@ -37,10 +42,30 @@ section#telefone {
 iframe#tela {
     
     position: relative;
-    width: 870px;
-    height: 560px;
+    width: 879px;
+    height: 528px;
 
-    top: 99px;
-    left: 203px;
+    top: 97px;
+    left: 200px;
     border: none;
+    
+}
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais  img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+    box-sizing: border-box;
+}
+
+/*Transição, sombra comportamento dos botões das redes sociais*/
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.61);;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.589);
+    transition: transform 0.5s, border 1s;
 }
